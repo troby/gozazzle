@@ -1,0 +1,63 @@
+package gozazzle
+
+var expected = map[string]string{
+	"BaseUrl":	"https://vendor.zazzle.com/v100/api.aspx?",
+	"Id":		"hanson",
+	"Secret":	"3f9bf3904b4e6609d46ff6964d8193ac",
+	"Hash":		"6454defaaf54a5da925fdbdb7419bd57",
+}
+
+var testOrder = Order{
+	OrderId:"2500000000000000001",
+	OrderDate:"2018-01-01T00:01:15.953",
+	OrderType:"default",
+	DeliveryMethod:"premium",
+	Priority:"Normal",
+	Currency:"USD",
+	Status:"EXPORTED",
+	Attributes:"source=Zazzle",
+	ShippingAddress:Address{
+		Address1:"55695 123 Street", Address2:"", Address3:"", Name:"Bob Dobbs", Name2:"", City:"SEATTLE", State:"WA",
+		Country:"USA", CountryCode:"us", Zip:"98555", Phone:"555-555-5555", Email:"notreal@zizzle.com", Type:"",
+	},
+	LineItems:[]LineItem{
+		LineItem{
+			LineItemId:"123456768",
+			OrderId:"2500000000000000001",
+			LineItemType:"visor_default",
+			Quantity:"1",
+			Description:"color = White",
+			Attributes:"color=white&design.areas=[visor_front]",
+			VendorAttributes:"",
+			Price:"1899",
+			ProductId:"123456789",
+			PrintFiles:[]ZazzleFile{
+				ZazzleFile{
+					Type:"application/pdf",
+					Url:"https://vendor.zazzle.com/v100/api.aspx?...",
+					Description:"visor_front"
+				}
+			},
+			Previews:[]ZazzleFile{
+				ZazzleFile{
+					Type:"image/jpeg",
+					Url:"https://vendor.zazzle.com/v100/api.aspx?...",
+					Description:"front"
+				}
+			}
+		}
+	},
+	Products:[]Product{
+		Product{
+			ProductId:"1234567890",
+			ProductInfo:""
+		}
+	},
+	PackingSheet:[]ZazzleFile{
+		ZazzleFile{
+			Type:"image/jpg",
+			Url:"https://vendor.zazzle.com/v100/api.aspx?...",
+			Description:"front"
+		}
+	},
+}
