@@ -35,29 +35,29 @@ var testOrder = Order{
 				ZazzleFile{
 					Type:"application/pdf",
 					Url:"https://vendor.zazzle.com/v100/api.aspx?...",
-					Description:"visor_front"
-				}
+					Description:"visor_front",
+				},
 			},
 			Previews:[]ZazzleFile{
 				ZazzleFile{
 					Type:"image/jpeg",
 					Url:"https://vendor.zazzle.com/v100/api.aspx?...",
-					Description:"front"
-				}
-			}
-		}
+					Description:"front",
+				},
+			},
+		},
 	},
 	Products:[]Product{
 		Product{
 			ProductId:"1234567890",
-			ProductInfo:""
-		}
+			ProductInfo:"",
+		},
 	},
 	PackingSheet:[]ZazzleFile{
 		ZazzleFile{
 			Type:"image/jpg",
 			Url:"https://vendor.zazzle.com/v100/api.aspx?...",
-			Description:"front"
-		}
+			Description:"front",
+		},
 	},
 }
