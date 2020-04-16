@@ -4,6 +4,7 @@ var expected = map[string]string{
 	"BaseUrl":	"https://vendor.zazzle.com/v100/api.aspx?",
 	"Id":		"hanson",
 	"Secret":	"3f9bf3904b4e6609d46ff6964d8193ac",
+	// printf "<Id><Secret> |md5"
 	"Hash":		"6454defaaf54a5da925fdbdb7419bd57",
 }
 
